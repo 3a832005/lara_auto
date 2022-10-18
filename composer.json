@@ -1,0 +1,15 @@
+{
+    "name": "sivia/lara_auto",
+    "autoload": {
+        "psr-4": {
+            "Sivia\\LaraAuto\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Li Yen Tzu",
+            "email": "3a832005@gm.stuent.ncut.edu.tw"
+        }
+    ],
+    "require": {}
+}
