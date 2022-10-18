@@ -2,7 +2,7 @@
     "name": "sivia/lara_auto",
     "autoload": {
         "psr-4": {
-            "Sivia\\LaraAuto\\": "src/"
+            "Demo\\": "./src/Demo"
         }
     },
     "authors": [
