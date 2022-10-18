@@ -11,5 +11,7 @@
             "email": "3a832005@gm.stuent.ncut.edu.tw"
         }
     ],
-    "require": {}
+    "require": {
+        "monolog/monolog": "^3.2"
+    }
 }
