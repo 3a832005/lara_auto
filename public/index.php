@@ -32,7 +32,9 @@ $log->error('Bar');
 
 use Carbon\Carbon;
 
+echo"<br>";
 printf("Right now is %s", Carbon::now()->toDateTimeString());
+echo " | ";
 printf("Right now in Vancouver is %s", Carbon::now('America/Vancouver'));  //implicit __toString()
 $tomorrow = Carbon::now()->addDay();
 $lastWeek = Carbon::now()->subWeek();
@@ -61,10 +63,10 @@ if (Carbon::now()->isWeekend()) {
     echo 'Party!';
 }
 // Over 200 languages (and over 500 regional variants) supported:
-echo Carbon::now()->subMinutes(2)->diffForHumans(); // '2 minutes ago'
-echo Carbon::now()->subMinutes(2)->locale('zh_CN')->diffForHumans(); // '2分钟前'
-echo Carbon::parse('2022-10-23 02:14')->isoFormat('LLLL'); // 'Sunday, October 23, 2022 2:14 AM'
-echo Carbon::parse('2022-10-23 02:14')->locale('fr_FR')->isoFormat('LLLL'); // 'dimanche 23 octobre 2022 02:14'
+echo "<br>".Carbon::now()->subMinutes(2)->diffForHumans(); // '2 minutes ago'
+echo ' | '.Carbon::now()->subMinutes(2)->locale('zh_CN')->diffForHumans(); // '2分钟前'
+echo ' | '.Carbon::parse('2022-10-23 02:14')->isoFormat('LLLL'); // 'Sunday, October 23, 2022 2:14 AM'
+echo ' | '.Carbon::parse('2022-10-23 02:14')->locale('fr_FR')->isoFormat('LLLL'); // 'dimanche 23 octobre 2022 02:14'
 
 // ... but also does 'from now', 'after' and 'before'
 // rolling up to seconds, minutes, hours, days, months, years
